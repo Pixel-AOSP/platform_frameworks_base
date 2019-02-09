@@ -84,7 +84,7 @@ class ShortcutPackageInfo {
         mLastUpdateTime = lastUpdateTime;
         mIsShadow = isShadow;
         mSigHashes = sigHashes;
-        mBackupAllowed = false; // By default, we assume false.
+        mBackupAllowed = true;
         mBackupSourceBackupAllowed = false;
     }
 

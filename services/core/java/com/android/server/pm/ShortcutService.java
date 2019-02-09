@@ -3535,7 +3535,7 @@ public class ShortcutService extends IShortcutService.Stub {
     }
 
     static boolean shouldBackupApp(PackageInfo pi) {
-        return (pi.applicationInfo.flags & ApplicationInfo.FLAG_ALLOW_BACKUP) != 0;
+        return true;
     }
 
     @Override

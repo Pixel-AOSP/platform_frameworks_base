@@ -56,9 +56,9 @@ public class AppBackupUtils {
      */
     public static boolean appIsEligibleForBackup(ApplicationInfo app, PackageManager pm) {
         // 1. their manifest states android:allowBackup="false"
-        if ((app.flags & ApplicationInfo.FLAG_ALLOW_BACKUP) == 0) {
-            return false;
-        }
+        //if ((app.flags & ApplicationInfo.FLAG_ALLOW_BACKUP) == 0) {
+        //    return false;
+        //}
 
         // 2. they run as a system-level uid but do not supply their own backup agent
         if ((app.uid < Process.FIRST_APPLICATION_UID) && (app.backupAgentName == null)) {
